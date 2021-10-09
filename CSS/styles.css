@@ -1,3 +1,5 @@
+/*toplography*/
+
 :root {
   --color-primary: #2584ff;
   --color-secondry: #00d9ff;
@@ -47,4 +49,27 @@ p {
   h3 {
     font-size: 2.4rem;
   }
+}
+/*links*/
+a {
+  text-decoration: none;
+}
+.link-arrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@media screen and(min-width:1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
+  }
+}
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+}
+.link-arrow:hover::after {
+  margin-left: 10px;
 }
